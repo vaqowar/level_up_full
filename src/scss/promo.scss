@@ -1,0 +1,195 @@
+.promo {
+  background: url(../img/bg/blue_bg01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-width: 1441px) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  @media screen and (max-width: 1440px) and (min-width: 1301px) { 
+    padding-top: 47px;
+    padding-bottom: 47px;
+  } 
+  @media screen and (max-width: 1400px) and (min-width: 1301px) {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+  @media screen and (max-width: 1300px) and (min-width: 1201px) {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  @media screen and (max-width: 1200px) and (min-width: 1101px) {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+  @media screen and (max-width: 1100px) and (min-width: 1025px) {
+    padding-top: 43px;
+    padding-bottom: 43px;
+  }
+  @media screen and (max-width: 1024px) and (min-width: 901px) {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+  @media screen and (max-width: 900px) and (min-width: 801px) {
+    padding-top: 41px;
+    padding-bottom: 41px;
+  }
+  @media screen and (max-width: 800px) and (min-width: 701px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  @media screen and (max-width: 700px) {
+    padding-top: 39px;
+    padding-bottom: 39px;
+  } 
+  @media screen and (max-width: 600px) and (min-width: 551px) {
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
+  @media screen and (max-width: 550px) and (min-width: 481px) {
+    padding-top: 37px;
+    padding-bottom: 37px;
+  }
+  @media screen and (max-width: 480px) and (min-width: 411px) {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+  @media screen and (max-width: 410px) and (min-width: 356px) {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  @media screen and (max-width: 355px) {
+    padding-top: 34px;
+    padding-bottom: 34px;
+  }
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 40px;
+
+    @media screen and (min-width: 701px) {
+      justify-content: center;
+    }
+    @media screen and (max-width: 700px) {
+      flex-direction: column; 
+    }
+  }
+  &__img {
+    @media screen and (min-width: 1441px) {
+      width: 500px;
+
+      margin-right: 48px;
+    }
+    @media screen and (max-width: 1440px) and (min-width: 701px) {
+      width: calc(100vw / 1440 * 500);
+
+      margin-right: calc(100vw / 1440 * 48);
+    }
+    @media screen and (max-width: 700px) {
+      width: 100%;
+      max-width: 275px;
+    }
+  }
+  &__text {
+    margin-top: 52px;
+
+    font-family: Arial,sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0;
+    text-align: left;
+    color: #000;
+
+    margin-block-start: 8px;  
+
+    width: 100%;
+
+    @media screen and (min-width: 701px) {
+      max-width: 50%;
+      width: 50%;
+    }
+    @media screen and (max-width: 700px) and (min-width: 601px) {
+      margin-top: 24px;
+    }
+    @media screen and (max-width: 600px) and (min-width: 551px) {
+      margin-top: 23px;
+    }
+    @media screen and (max-width: 550px) and (min-width: 481px) {
+      margin-top: 22px;
+    }
+    @media screen and (max-width: 480px) and (min-width: 411px) {
+      margin-top: 21px;
+      
+      font-size: 17px; 
+    }
+    @media screen and (max-width: 410px) and (min-width: 356px) {
+      margin-top: 20px;
+
+      font-size: 16px;
+    }
+    @media screen and (max-width: 355px) {
+      margin-top: 19px;
+
+      font-size: 15px;
+    }
+  }
+  &__chars {
+    // display: grid;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    // grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px 0;
+
+    margin-top: 32px;
+
+    > li {
+      position: relative;
+
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.2;
+      text-align: center;
+
+      width: calc(100% / 3);
+      min-width: 275px;
+
+      > p {
+        position: relative;
+
+        display: inline-flex;
+
+        font-family: inherit;
+        font-size: inherit;
+        font-style: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        text-align: inherit;
+
+        &::before {
+          position: absolute;
+  
+          top: 50%;
+          right: 100%;
+  
+          margin-right: 8px; 
+        
+          font-size: inherit; 
+          color: #5d8eaa;
+  
+          transform: translateY(-50%);
+  
+          content: '✔';
+        }
+      }
+    }
+  }
+}

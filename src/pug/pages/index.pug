@@ -1,0 +1,184 @@
+extends ../includes/html
+
+block variables 
+    - var pageTitle = "Level Up"
+
+block content    
+
+  .intro  
+    video(autoplay, muted, loop).intro__bg
+      source(src="video/video.mp4", type="video/mp4") 
+
+    .container 
+      p.blue__title &laquo;LevelUp&raquo;. Продукт для&nbsp;повышения потенции. 
+
+      .intro__inner 
+        .intro__left 
+          img(src="img/prod.png", alt="prod")
+        .intro__right
+          .intro__right_ttl &laquo;LevelUp&raquo; характеристики:
+          ul.intro__list
+            li #[p Lorem ipsum dolor sit amet] 
+            li #[p consectetur adipisicing elit]
+            li #[p maxime hic nam dolorem deleniti]
+          .call__btn_container  
+            button.call__btn Заказать
+
+
+
+  .composition
+    .container 
+      p.blue__title Состав нашего продукта &laquo;LevelUp&raquo;:
+
+      .composition__inner
+        .composition__block
+          .composition__block_img
+            img(src="img/prod.png", alt="prod")
+          p Lorem ipsum dolor sit 
+        .composition__block
+          .composition__block_img
+            img(src="img/prod.png", alt="prod")
+          p Lorem ipsum dolor sit 
+        .composition__block
+          .composition__block_img
+            img(src="img/prod.png", alt="prod")
+          p Lorem ipsum dolor sit 
+
+        .composition__block
+          .composition__block_img
+            img(src="img/prod.png", alt="prod")
+          p Lorem ipsum dolor sit 
+        .composition__block
+          .composition__block_img
+            img(src="img/prod.png", alt="prod")
+          p Lorem ipsum dolor sit 
+        .composition__block
+          .composition__block_img
+            img(src="img/doctor.png", alt="prod")
+          p И даже мужик:)
+
+        img(src="img/prod.png", alt="prod").composition__prod
+
+      .call__btn_container  
+        button.call__btn Заказать
+
+  .reviews  
+    .container 
+      p.reviews__title Что говорят о нас наши клиенты
+      .reviews__inner
+        .reviews__block
+          .reviews__block_stars
+            img(src="img/icons/star-yellow01.svg", alt="")
+            img(src="img/icons/star-yellow01.svg", alt="")
+            img(src="img/icons/star-yellow01.svg", alt="")
+            img(src="img/icons/star-yellow01.svg", alt="")
+            img(src="img/icons/star-yellow01.svg", alt="")
+          p.reviews__block_txt Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel consectetur eos molestias laboriosam iste enim dolorum, necessitatibus delectus aspernatur est molestiae consequatur impedit placeat? 
+          .reviews__block_bottom
+            img(src="img/review/review01.png", alt="")
+            p.reviews__block_bottom_name Иван Сидоров
+        .reviews__block
+          .reviews__block_stars
+            img(src="img/icons/star-yellow01.svg", alt="")
+            img(src="img/icons/star-yellow01.svg", alt="")
+            img(src="img/icons/star-yellow01.svg", alt="")
+            img(src="img/icons/star-yellow01.svg", alt="")
+            img(src="img/icons/star-yellow01.svg", alt="")
+          p.reviews__block_txt Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolorum, quasi perspiciatis accusantium aperiam numquam consequuntur nostrum harum facilis qui quia ipsum nihil amet eaque nisi cum, iste, molestias iure!
+          .reviews__block_bottom
+            img(src="img/review/review01.png", alt="")
+            p.reviews__block_bottom_name Man 02
+
+        .reviews__block
+          .reviews__block_stars
+            img(src="img/icons/star-yellow01.svg", alt="")
+            img(src="img/icons/star-yellow01.svg", alt="")
+            img(src="img/icons/star-yellow01.svg", alt="")
+            img(src="img/icons/star-yellow01.svg", alt="")
+            img(src="img/icons/star-yellow01.svg", alt="")
+          p.reviews__block_txt Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium soluta autem error, omnis assumenda aliquid inventore expedita quasi repudiandae placeat dolor voluptatem aliquam laboriosam dignissimos dolore a quod nihil sequi.
+          .reviews__block_bottom
+            img(src="img/review/review01.png", alt="")
+            p.reviews__block_bottom_name Man 03
+
+        .reviews__block
+          .reviews__block_stars
+            img(src="img/icons/star-yellow01.svg", alt="")
+            img(src="img/icons/star-yellow01.svg", alt="")
+            img(src="img/icons/star-yellow01.svg", alt="")
+            img(src="img/icons/star-yellow01.svg", alt="")
+            img(src="img/icons/star-yellow01.svg", alt="")
+          p.reviews__block_txt Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas blanditiis quia qui rem ea quaerat cumque tempore aspernatur saepe eos ut, quas culpa consequatur soluta omnis expedita maiores dicta aliquam.
+          .reviews__block_bottom
+            img(src="img/review/review01.png", alt="")
+            p.reviews__block_bottom_name Man 04
+
+        .reviews__block
+          .reviews__block_stars
+            img(src="img/icons/star-yellow01.svg", alt="")
+            img(src="img/icons/star-yellow01.svg", alt="")
+            img(src="img/icons/star-yellow01.svg", alt="")
+            img(src="img/icons/star-yellow01.svg", alt="")
+            img(src="img/icons/star-yellow01.svg", alt="")
+          p.reviews__block_txt Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ipsam consectetur minima quae! Necessitatibus illo rerum ad voluptates eum? Adipisci quasi quo sint fugiat maiores fuga, corrupti at exercitationem rem?
+          .reviews__block_bottom
+            img(src="img/review/review01.png", alt="")
+            p.reviews__block_bottom_name Man 05
+
+  .promo 
+    .container
+      .promo__body 
+        img(src="img/doctor.png", alt="doctor").promo__img
+        p.promo__text   
+          | &emsp;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla impedit dolores exercitationem est culpa reiciendis officia, error voluptates reprehenderit optio quibusdam sit repudiandae quam qui numquam voluptas, quo recusandae. Minima!
+          br
+          br
+          | &emsp;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla impedit dolores exercitationem est culpa reiciendis officia, error voluptates reprehenderit optio quibusdam sit repudiandae quam qui numquam voluptas, quo recusandae. Minima!
+          br
+          br
+          | &emsp;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla impedit dolores exercitationem est culpa reiciendis officia, error voluptates reprehenderit optio quibusdam sit repudiandae quam qui numquam voluptas, quo recusandae. Minima!
+      ul.promo__chars
+        li 
+          p Lorem ipsum dolor sit 
+        li 
+          p amet consectetur adipisicing 
+        li 
+          p est id consequuntur eaque 
+
+      .call__btn_container  
+        button.call__btn Заказать
+
+  .order
+    .container
+      p.blue__title &laquo;LevelUp&raquo;. Продукт для&nbsp;повышения потенции. 
+      div.order__cooldown До конца акции осталось:
+        p #[span 00]:#[span]:#[span]
+      .order__inner
+        .order__product   
+          img(src="img/prod.png", alt="prod")
+          p Только для первых <span>30 покупателей</span> специальная цена <span> 200 руб</span>!
+          .order__price 
+            .order__price_old #[small 400 руб] #[span Старая цена]
+            .order__price_new 200 руб #[span Новая цена]
+
+        .order__right
+          .order__form
+            p Введите свои данные 
+            .order__form_inp
+              span #[small Например:] Александр
+              input(type="text" name="name" placeholder="Ваше имя")
+            .order__form_inp
+              span #[small Формат ввода:] 8XXXXXXXXXX
+              input(type="number" name="phone" placeholder="Ваш номер телефона")
+            button Заказать
+
+
+
+
+
+
+
+
+    
+    
+
